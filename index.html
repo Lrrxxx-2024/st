@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arix Signature Tree</title>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盛星辉 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "three": "https://esm.sh/three@^0.182.0",
-    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
-    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
-    "vite": "https://esm.sh/vite@^7.3.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-    "@mediapipe/tasks-vision": "https://esm.sh/@mediapipe/tasks-vision@^0.10.22-rc.20250304"
-  }
-}
-</script>
-<link rel="stylesheet" href="./index.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-  <body>
+<body>
     <div id="root"></div>
-    <!-- Webcam container for Vision Toggle feature -->
-    <div id="webcam-container">
-      <video id="webcam" playsinline muted></video>
-    </div>
-    <script type="module" src="./assets/index-D7asdf8.js"></script>
-  </body>
+
+    <script type="text/babel">
+        // 这里的 App 是你之前的组件逻辑
+        function App() {
+            return (
+                <div className="flex items-center justify-center min-h-screen bg-slate-900 text-white">
+                    <div className="text-center p-8 bg-slate-800 rounded-xl shadow-2xl border border-slate-700">
+                        <h1 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                            盛星辉 2025
+                        </h1>
+                        <p className="text-slate-400 text-lg">
+                            网站已成功部署！
+                        </p>
+                        <div className="mt-6 px-4 py-2 bg-emerald-500/10 text-emerald-400 rounded-full text-sm inline-block">
+                            React 运行环境已就绪
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // 渲染到页面
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
 </html>
